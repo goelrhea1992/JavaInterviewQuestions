@@ -1,5 +1,9 @@
 /**
-
+ * Consider a 2 D array of 0s and 1s.
+ * Find the maximum number of rows that can be made all ones (each eleemnt in the row is a '1'), 
+ * with minimum number of column flips.
+ * Note: You're only allowed to flip entire columns, and not individual elements. 
+ * You can flip as many times as you like - though flipping twice gives you back the same row :)
 **/
 
 import java.util.HashMap;
