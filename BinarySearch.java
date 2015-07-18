@@ -7,8 +7,6 @@ public class BinarySearch {
 	}
 
 	private static int getIndexOf(int i, int[] arr) {
-		// TODO Auto-generated method stub
-		
 		int low = 0;
 		int high = arr.length;
 		int mid;
