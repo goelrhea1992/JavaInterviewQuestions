@@ -1,5 +1,5 @@
 
-public class reverse {
+public class StringReverse {
 public static void main(String args[]) {
 	String var = "arjun";
 	char[] tempvar = var.toCharArray();
