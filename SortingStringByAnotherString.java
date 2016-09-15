@@ -12,21 +12,15 @@ public class SortingStringByAnotherString {
 		dict.add('d');
 		dict.add('a');
 		dict.add('b');
-		
-		System.out.println(sortByD("abacdcadzbcbd",dict));
-		
+		System.out.println(sortByDict("abacdcadzbcbd", dict));
 	}
-	public static String sortByD(String s, List<Character> dict){
+	public static String sortByDict(final String s, final List<Character> dict){
 		String output = "";
 		HashMap<Character, String> m = new HashMap<Character, String>();
 		for (Character c : dict)
-			m.put(c,"");
-		System.out.println(m);
+			m.put(c, "");
 		for (int i = 0; i < s.length(); ++i)
-			m.put(s.charAt(i),m.get(s.charAt(i))+s.charAt(i));
-		
-		System.out.println(m);
-
+			m.put(s.charAt(i), m.get(s.charAt(i)) + s.charAt(i));
 		for (Character c : dict)
 			output += m.get(c);
 		return output;
